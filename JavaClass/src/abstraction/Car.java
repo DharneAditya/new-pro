@@ -19,5 +19,5 @@ public abstract  class Car {
 	abstract void dashboard();
 	abstract void safetyfeatures();
 	abstract void builquality();
-	
+	abstract void alloyWheel();
 }

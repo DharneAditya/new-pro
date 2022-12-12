@@ -1,6 +1,6 @@
 package abstraction;
 
-public class Swift extends Car {
+public abstract class Swift extends Car {
 
 	void setdata(String engine , int price, int serialNo)
 	{
@@ -29,7 +29,7 @@ public class Swift extends Car {
 
 	
 	void builquality() 
-	{System.out.println("God build Quality");
+	{System.out.println("Good build Quality");
 		
 	}
 
