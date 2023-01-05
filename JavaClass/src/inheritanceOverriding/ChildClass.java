@@ -5,8 +5,9 @@ public class ChildClass extends ParentClass{
 	void name()
 
 	{
-		super.name();
 		System.out.println("Rahul");
+		super.name();
+		
 	}
 	void surname()
 	{

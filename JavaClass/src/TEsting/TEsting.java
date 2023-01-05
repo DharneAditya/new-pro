@@ -3,41 +3,65 @@ import java.util.Arrays;
 import java.util.Scanner;
 public class TEsting {
 	
+	public static boolean checkAnagram(String first,String second)
+	{
+		boolean isAnagram=false;
+		
+		if(first.length()==second.length())
+	    {
+	    char array[]=first.toCharArray();
+	    char array1[]=second.toCharArray();
+	    Arrays.sort(array1);
+	    Arrays.sort(array);
+	    
+	    
+	    System.out.println(Arrays.toString(array));
+	    System.out.println(Arrays.toString(array1));
+	    
+	    int flag=1;
+	    
+	    for(int i=0;i<array.length;i++)
+	    {
+	    	if(array[i]!=array1[i])
+	    	{
+	    		
+	    		
+	    		flag=0;
+	    		System.out.println(isAnagram);
+	    		break;
+	    		
+	    	}
+	    	
+	    	
+	    	
+	    }
+	    if(flag==1)
+    	{
+    		isAnagram=true;
+    		System.out.println(isAnagram);
+    	}
+	    
+		
+		
+		
+		
+		
+	}
+		return isAnagram;
 	
-	
+	}
 	
 	
 	public static void main(String[] args) {
 		
+		Scanner sc=new Scanner (System.in);
 		
-		
-		int a[]= {1,8,3,4,2,6,7,5};
-		
-		
-		for(int i =0;i<a.length-1;i++)
-		{
-			for(int j=0;j<a.length-1;j++)
-				
-			{
-				if(a[j]>a[j+1])
-			
-			{
-				int temp=a[j];
-				a[j]=a[j+1];
-				a[j+1]=temp;
-				
-			}
-			}
-		}
-		
-		System.out.println(Arrays.toString(a));
-		
-		
-		
-		
-		
-		
-		
+		TEsting t=new TEsting();
+		t.checkAnagram("world", "whehe");
+	
+	
+	
+	
 		
 		
 		}

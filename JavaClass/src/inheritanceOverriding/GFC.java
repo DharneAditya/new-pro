@@ -3,7 +3,12 @@ package inheritanceOverriding;
 public class GFC {
 
 	String name,middleName;
-	static String surname="Dharne";
+	static String surname;
+	
+	GFC(String surName)
+	{
+		this.surname=surName;
+	}
 	
 	public void setName(String name)
 	{
@@ -22,7 +27,12 @@ public class GFC {
 
 class Father extends GFC
 {
- String name1;
+ Father(String surName) {
+		super(surName);
+		
+	}
+
+String name1;
 		
 	public void setName1(String name1)
 	{
@@ -39,6 +49,12 @@ class Father extends GFC
 
 class Child extends Father
 {
+	
+
+	Child(String surName) {
+		super(surName);
+	
+	}
 
 	String name2;
 	public void setName2(String name2)

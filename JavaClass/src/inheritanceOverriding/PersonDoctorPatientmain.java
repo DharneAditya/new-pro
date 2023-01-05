@@ -13,7 +13,7 @@ public class PersonDoctorPatientmain {
 		d.setId(4674);
 		d.setSpecialization("Child");
 		d.setLisence("346");
-		System.out.println("imformation");
+		System.out.println("Doctor imformation");
 		d.display();
 		
 		System.out.println();
@@ -26,7 +26,7 @@ public class PersonDoctorPatientmain {
 		p.setId(001);
 		p.setBedno(89);
 		p.setDisease("No disease");
-		System.out.println(" p imformation");
+		System.out.println(" patient imformation");
 		p.display();
 
 		

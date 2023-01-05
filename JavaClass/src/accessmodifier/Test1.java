@@ -9,6 +9,11 @@ public class Test1 {
 	private int b=100;
 	
 	
+	protected void testing()
+
+	{
+		
+	}
 
 	public static void main (String []args)
 	{

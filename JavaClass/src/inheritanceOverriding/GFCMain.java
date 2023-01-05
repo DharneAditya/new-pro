@@ -4,7 +4,7 @@ public class GFCMain {
 
 	public static void main(String[] args) {
 		
-		Child g1=new Child();
+		Child g1=new Child("Dharne");
 	   
 		g1.setName("Rahul");
 		g1.setMiddleName("Satish");
